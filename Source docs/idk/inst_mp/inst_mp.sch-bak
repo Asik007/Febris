@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Instrumentation:AD8422 U1
+U 1 1 60929AFF
+P 5250 2750
+F 0 "U1" H 5694 2796 50  0000 L CNN
+F 1 "AD8422" H 5694 2705 50  0000 L CNN
+F 2 "" H 4950 2750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf" H 5600 2350 50  0001 C CNN
+	1    5250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6092A4EB
+P 5150 3050
+F 0 "#PWR02" H 5150 2800 50  0001 C CNN
+F 1 "GND" H 5155 2877 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 6092A92D
+P 5150 2450
+F 0 "#PWR01" H 5150 2300 50  0001 C CNN
+F 1 "+5V" H 5165 2623 50  0000 C CNN
+F 2 "" H 5150 2450 50  0001 C CNN
+F 3 "" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6092AF6F
+P 5350 3050
+F 0 "#PWR03" H 5350 2800 50  0001 C CNN
+F 1 "GND" H 5355 2877 50  0000 C CNN
+F 2 "" H 5350 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 6092B2F9
+P 4750 2750
+F 0 "R1" H 4809 2796 50  0000 L CNN
+F 1 "R_Small" H 4809 2705 50  0000 L CNN
+F 2 "" H 4750 2750 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2650 4850 2650
+Wire Wire Line
+	4850 2850 4750 2850
+Text GLabel 4850 2950 0    50   Input ~ 0
+Vin+
+Text GLabel 4850 2550 0    50   Input ~ 0
+Vin-
+Text GLabel 5650 2750 2    50   Input ~ 0
+Out
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 6092DFB8
+P 3850 2750
+F 0 "J?" H 3768 2325 50  0000 C CNN
+F 1 "Conn_01x05" H 3768 2416 50  0000 C CNN
+F 2 "" H 3850 2750 50  0001 C CNN
+F 3 "~" H 3850 2750 50  0001 C CNN
+	1    3850 2750
+	-1   0    0    1   
+$EndComp
+Text GLabel 4050 2550 2    50   Input ~ 0
+Vin-
+Text GLabel 4050 2750 2    50   Input ~ 0
+Vin+
+$Comp
+L power:GND #PWR?
+U 1 1 6092E855
+P 4050 2650
+F 0 "#PWR?" H 4050 2400 50  0001 C CNN
+F 1 "GND" V 4055 2522 50  0000 R CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6092EF26
+P 4050 2850
+F 0 "#PWR?" H 4050 2700 50  0001 C CNN
+F 1 "+5V" V 4065 2978 50  0000 L CNN
+F 2 "" H 4050 2850 50  0001 C CNN
+F 3 "" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	0    1    1    0   
+$EndComp
+Text GLabel 4050 2950 2    50   Input ~ 0
+Out
+$EndSCHEMATC

@@ -1,0 +1,249 @@
+<Mytest>
+    GridLayout
+        cols: 1
+        size: root.size
+        StackLayout:
+            
+            orientation: 'lr-tb'
+            size_hint_y: .05
+            Button:
+                text: "pog"
+                size_hint_x: .1
+                background_color: (0, 0, 0, 0)
+                on_press: root.ids.manager.current = 'first'
+                
+            Button:
+                text: "p"
+                size_hint_x: .1
+                background_color: (0, 0, 0, 0)
+                on_press: root.ids.manager.current = 'second'
+            Button:
+                text: " o"
+                size_hint_x: .1
+                background_color: (0, 0, 0, 0)
+                on_press: root.ids.manager.current = 'third'
+            Button:
+                text: "G"
+                size_hint_x: .1
+                background_color: (0, 0, 0, 0)
+                on_press: root.ids.manager.current = 'fourth'
+
+        ScreenManager:
+            id:manager
+            Screen:
+                name: 'first'
+                GridLayout:
+                    cols: 2
+                    rows: 1
+                    GridLayout:
+                        cols: 1
+                        spacing: (3, 5)
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (.2, 1, 1, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 1, .2, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (0, 1, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                    Splitter:
+                        sizeable_from: "left"
+                        strip_size: "7pt"
+                        Label:
+                            text:"POGER"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 0, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+            Screen:
+                name: 'second'
+                GridLayout:
+                    cols: 2
+                    rows: 1
+                    GridLayout:
+                        cols: 1
+                        spacing: (3, 5)
+                        Label:
+                            text:"POGER"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 0, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 1, .2, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (0, 1, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                    Splitter:
+                        sizeable_from: "left"
+                        strip_size: "7pt"
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (.2, 1, 1, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+            Screen:
+                name: 'third'
+                GridLayout:
+                    cols: 2
+                    rows: 1
+                    GridLayout:
+                        cols: 1
+                        spacing: (3, 5)
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (.2, 1, 1, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"POGER"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 0, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (0, 1, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                    Splitter:
+                        sizeable_from: "left"
+                        strip_size: "7pt"
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 1, .2, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+            Screen:
+                name: 'fourth'
+                GridLayout:
+                    cols: 2
+                    rows: 1
+                    GridLayout:
+                        cols: 1
+                        spacing: (3, 5)
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (.2, 1, 1, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 1, .2, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Label:
+                            text:"POGER"
+                            canvas.before:
+                                Color: 
+                                    rgba: (1, 0, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                    Splitter:
+                        sizeable_from: "left"
+                        strip_size: "7pt"
+                        Label:
+                            text:"Idk"
+                            canvas.before:
+                                Color: 
+                                    rgba: (0, 1, 0, 1)
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+
+
+
+            # GridLayout:
+            #     cols: 2
+            #     rows: 1
+            #     GridLayout:
+            #         cols: 1
+            #         spacing: (3, 5)
+            #         Label:
+            #             text:"Idk"
+            #             canvas.before:
+            #                 Color: 
+            #                     rgba: (1, 0, 0, 1)
+            #                 Rectangle:
+            #                     pos: self.pos
+            #                     size: self.size
+            #         Label:
+            #             text:"Idk"
+            #             canvas.before:
+            #                 Color: 
+            #                     rgba: (1, 1, .2, 1)
+            #                 Rectangle:
+            #                     pos: self.pos
+            #                     size: self.size
+            #         Label:
+            #             text:"POGER"
+            #             canvas.before:
+            #                 Color: 
+            #                     rgba: (.2, 1, 1, 1)
+            #                 Rectangle:
+            #                     pos: self.pos
+            #                     size: self.size
+            #     Splitter:
+            #         sizeable_from: "left"
+            #         strip_size: "7pt"
+            #         Label:
+            #             text:"IDK"
+            #             canvas.before:
+            #                 Color: 
+            #                     rgba: (0, 1, 0, 1)
+            #                 Rectangle:
+            #                     pos: self.pos
+            #                     size: self.size

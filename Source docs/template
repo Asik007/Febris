@@ -1,0 +1,9 @@
+Time    HR          BP                  Temp
+        100         100                 100
+
+
+        serial data: BP, Temp
+
+
+
+        serial as tmp = 8 or tmp = 8, HR = 9,...

@@ -1,0 +1,13 @@
+
+while True:
+        line = input('huh?')
+        if line.startswith('ECG = '):
+            
+            ECG_decode = (line.strip('ECG = '))
+            break
+        elif line in "TMP" :
+            print("test")
+            break
+        elif line in "BP" :
+            print("ok")
+            break

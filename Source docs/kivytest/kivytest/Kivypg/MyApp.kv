@@ -1,0 +1,41 @@
+
+FloatLayout:
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'top'
+        Label:
+            size_hint: 1, .1
+            text: 'My App'
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'center'
+        ScreenManager:
+            id: manager
+            size_hint: 1, .8
+            Screen:
+                name: 'first'
+                Label:
+                    text: 'First screen'
+            Screen:
+                name: 'second'
+                Label:
+                    text: 'Second screen'
+            Screen:
+                name: 'third'
+                Label:
+                    text: 'Third screen'
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'bottom'
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, .1
+            Button:
+                text: 'first'
+                on_press: root.ids.manager.current = 'first'
+            Button:
+                text: 'second'
+                on_press: root.ids.manager.current = 'second'
+            Button:
+                text: 'third'
+                on_press: root.ids.manager.current = 'third'
